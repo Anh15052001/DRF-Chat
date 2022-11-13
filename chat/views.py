@@ -4,8 +4,8 @@ from django.http.response import JsonResponse, HttpResponse
 from django.shortcuts import render, redirect
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.parsers import JSONParser
-from chat.models import Message, UserProfile
-from chat.serializers import MessageSerializer, UserSerializer
+from .models import Message, UserProfile
+from .serializers import MessageSerializer, UserSerializer
 
 
 def index(request):
